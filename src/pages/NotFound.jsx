@@ -1,9 +1,9 @@
 import { useRouteError,Link } from "react-router-dom";
 
 const NotFound = () =>{
-    const error = useRouteError();
-    console.log(error);
-    return (
+    const error = useRouteError(); //se crea la funcion y se extrae el estado del error 
+    console.log(error); //imprime el error 
+    return ( //regresara el error
         <div>
             <h1>404</h1>
             <p>Page not found</p>
